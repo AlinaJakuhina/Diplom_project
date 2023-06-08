@@ -1,0 +1,13 @@
+.button_catalog{
+    width: 125px;
+    height: 49px;
+    border: solid #339933 2px;
+    border-radius: 5px;
+    background: #339933;
+    color: white;
+
+    font-family: 'Montserrat';
+    
+    font-weight: 700;
+    font-size: 16px;
+}

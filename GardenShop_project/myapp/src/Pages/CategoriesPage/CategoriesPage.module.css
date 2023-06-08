@@ -1,0 +1,10 @@
+.categories_container{
+    margin-top: 80px;
+}
+
+.categories_container h2{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding-left: 30px;
+}

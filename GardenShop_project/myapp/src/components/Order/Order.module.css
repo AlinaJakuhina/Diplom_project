@@ -1,0 +1,75 @@
+.order_container{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    border: 2px solid black;
+    border-radius: 21px;
+    align-self: center;
+    font-family: 'Montserrat';
+}
+
+.order_title{
+    font-size: 28px; 
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.order_summ{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.order_total{
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 30px;
+}
+
+.order_totalSum{
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.order_totalSum span{
+    font-size: 10px;
+    font-weight: 600;
+}
+
+form{
+    width: 440px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.order_input{
+    height: 70px;
+    border-radius: 20px;
+}
+
+.order_input::placeholder{
+    padding: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: medium;
+    color: rgba(146, 146, 146, 1);
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+    font-style: medium;
+}
+
+.order_button{
+    background-color: rgba(51, 153, 51, 1);
+    color: white;
+    height: 70px;
+    border-radius: 20px;
+    border-style: none;
+    font-size: 28px;
+    font-weight: 700;
+    font-style: bold;
+    letter-spacing: 2px;
+    font-family: 'Montserrat';
+}

@@ -1,0 +1,15 @@
+.card img{
+    width: 318px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.card h6{
+   font-size: 18px;
+   font-size: 600;
+   font-family: 'Montserrat';
+   font-style: bold; 
+   text-align: center;
+   margin-top: 20px;
+   letter-spacing: 1.5px;
+}

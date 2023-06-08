@@ -1,0 +1,53 @@
+.filter_container{
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 70px;
+}
+
+.filter_by_price,
+.filter_by_checkbox,
+.filter_by_sort{
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.filter_by_price input{
+    display: flex;
+    width: 103px;
+    height: 40px;
+    border-radius: 7px;
+    padding-left: 10px;
+}
+
+
+.sort_wrapper{
+    padding-left: 10px;
+    margin-left: 40px;
+    width: 219px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    color: rgba(121, 121, 121, 1);
+}
+
+.filter_by_price{
+    display: flex;
+    gap: 20px;
+}
+
+.filter_checkbox_title input{
+   margin-left: 20px;
+   width: 40px;
+   height: 40px;
+   border: 1px solid black;
+   border-radius: 7px;
+}
+.filter_by_sort{
+    margin-left: 90px;
+}

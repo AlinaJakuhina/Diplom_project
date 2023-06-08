@@ -1,0 +1,40 @@
+.categories{
+   padding-top: 40px;
+}
+
+.title h1{
+    padding: 0 30px;
+    font-size: 40px;
+    font-weight: 700;
+    margin-right: 60px;
+}
+
+.title button{
+    border: 2px solid rgba(139, 139, 139, 1);
+    color:  rgba(139, 139, 139, 1);
+    background-color: white;
+    width: 120px;
+    height: 40px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    border-radius: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 11px;
+   
+}
+.title{
+    display: flex;
+    align-items: center;
+    position: relative;
+   
+}
+
+.categories_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+    padding: 30px 35px 90px;
+    
+}

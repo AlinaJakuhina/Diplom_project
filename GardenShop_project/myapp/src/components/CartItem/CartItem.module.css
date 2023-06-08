@@ -1,0 +1,84 @@
+.cart_container{
+    display: flex;
+    align-items: center;
+    padding: 30px 0;
+    font-size: 20px;
+    border-bottom: 1px solid rgba(167, 167, 167, 1);
+    position: relative;
+    
+
+}
+
+.product_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 9px 20px 29px;
+}
+
+.product_info h2{
+    font-size: 18px;
+    font-weight: 600;
+    font-style: semiBold;
+    letter-spacing: 2px;
+    color:#3A3A3A;
+}
+
+img{
+    width: 192px;
+    height: 166px;
+    border-radius: 8px;
+    object-fit:contain;
+}
+
+.quant_buttons{
+    width: 140px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    font-size: 18px;
+    font-weight: 600px;
+
+}
+
+.delete_btn{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    opacity: 0.4;
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    z-index: 5;
+    cursor: pointer;
+}
+.price{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: line-through;
+    color: grey;
+    padding: 70px;
+  }
+  .discount_price {
+    font-size: 40px;
+    font-weight: 600;
+    font-style: bold;
+    padding-right: 30px;
+    font-style: bold;
+    font-family: 'Montserrat';
+    
+  }
+
+  .discount_price span{
+    font-size: 20px;
+    font-weight: 600;
+    font-style: bold;
+    font-family: 'Montserrat';
+  }

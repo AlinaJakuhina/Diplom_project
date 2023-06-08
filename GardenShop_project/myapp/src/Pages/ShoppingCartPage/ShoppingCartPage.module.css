@@ -1,0 +1,44 @@
+.cartPage_container{
+    padding: 35px;
+}
+
+.cart_title h2{
+    font-size: 40px;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+.go_back{
+    position: absolute;
+    color: #cfc5c5;
+}
+
+.go_back:hover{
+    color: black;
+}
+
+.error{
+    color: rgb(251, 3, 3);
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.link_back{
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    border-bottom: 1px solid rgb(167, 167, 167, 1);
+    margin-right: 560px;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    padding-bottom: 35px;
+}
+
+.list_wrapper{
+    display: flex;
+    gap: 60px;
+    justify-content:space-between;
+    align-items: flex-start;
+    margin-bottom: 140px;
+}

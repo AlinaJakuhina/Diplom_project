@@ -1,0 +1,47 @@
+.filter_checkbox {
+    padding: 9px 12px;
+    width: 40px;
+    height: 40px;
+    margin-left: 40px;
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.filter_checkbox input{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    position: relative;
+}
+
+.filter_checkbox input::before {
+    content:'\2713';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-20%, -50%);
+    font-size: 30px;
+    color: rgb(47, 45, 45);
+    visibility: hidden;
+}
+input[type="checkbox"]:checked::before{
+    visibility: visible;
+}
+
+.checkbox_container p{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.filter_checkbox{
+    display: flex;
+    flex-direction: row;
+    margin-right: 340px;
+}
+
+.checkbox_container{
+    display: flex;
+    align-items: center;
+}

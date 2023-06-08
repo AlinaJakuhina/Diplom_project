@@ -1,0 +1,26 @@
+
+.products_container #products{
+    display: grid;
+    grid-template-columns: repeat(auto-fit(4, 1fr));
+}
+
+.products_container{
+    padding: 30px ;
+}
+
+.filter_container{
+  display: flex;
+  justify-content: space-between;  
+}
+.check{
+    position: relative;
+    display: flex;
+    justify-content:space-between;
+    right: 5%;
+}
+
+.sort{
+    display: flex;
+    position: relative;
+    right: 25%
+}

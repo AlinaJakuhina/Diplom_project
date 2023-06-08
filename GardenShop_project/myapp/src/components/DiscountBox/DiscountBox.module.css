@@ -1,0 +1,71 @@
+.discount_wrapper{
+    width: 1440px;
+    height: 580px;
+    color: white;
+    background: linear-gradient(
+    90deg,
+    rgba(0, 99, 0, 1) 0%,
+    rgba(51, 153, 51, 1) 100%
+  );
+  
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 27px 91px;
+}
+
+.box_left img{
+    width: 422px;
+    height: 422px;
+    object-fit: cover;
+}
+
+.box_right h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+}
+.box_right h2{
+    font-size: 40px;
+}
+.box_right{
+    margin-top: 50px;
+    padding: 204px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+    
+}
+
+.phone_input{
+    width: 473px;
+    height: 75px;
+    border-radius: 25px;
+    padding-left: 28px;
+    font-size: 18px;
+    margin-top: 0px;
+
+}
+
+.phone_button{
+    width: 473px;
+    height: 75px;
+    border-radius: 25px;
+    margin: 38px 0 32px;
+    padding-left: 28px;
+    font-size: 28px;
+    color: white;
+    background-color: transparent;
+    border: white 2px solid;
+    margin-top: -20px;
+}
+
+.phone_button:hover{
+    background-color: rgba(200, 200, 200, 0.345);
+    
+}
+.errors{
+    font-size: 28px;
+}

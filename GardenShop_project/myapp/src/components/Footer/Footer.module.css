@@ -1,0 +1,70 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 35px;
+    
+}
+
+.footer_left 
+.footer_right h2 {
+    font-weight: 700;
+    font-size: 40px;
+    font-family: 'Montserrat';
+    padding: 25px 0;
+}
+
+.footer_left h1 {
+    padding: 25px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.instagram_logo,
+.whatsapp_logo {
+    width: 44px;
+    height: 44px;
+}
+
+.icons{
+    padding: 33px 0;
+    display: flex;
+    gap: 68px;
+    text-align: center;
+
+}
+.icons p {
+    padding: 11px 0;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.footer_right_adress{
+    font-weight: 600;
+    font-size: 40px;
+    padding: 25px 0;
+}
+
+.footer_hours{
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.footer_day{
+    font-weight: 600;
+    font-size: 24px;}
+
+.footer_day_container{
+    padding: 25px 0;
+}
+
+.map{
+    width: 1345px;
+    height: 525px;
+}
+
+.footer_wrapper{
+    display: flex;
+    justify-content: space-between;
+}

@@ -1,0 +1,5 @@
+.image_notFound img{
+    width: 1440px;
+    height: 625px;
+    object-fit:cover;
+}
