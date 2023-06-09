@@ -32,7 +32,6 @@ function ProductCard(productCard) {
             </div>
               <p className={s.product_title}>{title}</p>
 			</NavLink>
-
     </div>
   )
 }

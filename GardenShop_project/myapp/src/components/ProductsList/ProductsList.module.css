@@ -12,7 +12,7 @@
   grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
   justify-items: center;
   grid-column-gap: 45px;
-
+  
   padding-left: 30px;
 }
 

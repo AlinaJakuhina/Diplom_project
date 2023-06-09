@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { getCategoriesAll } from '../../asyncActions/categoriesAll';
+import { fetchGetCategoriesAll } from '../../asyncActions/categoriesAll';
 import CategoriesList from '../../components/CategoriesList/CategoriesList';
 import s from './CategoriesPage.module.css';
 
@@ -10,7 +10,9 @@ function CategoriesPage() {
 
   const categories = useSelector(store => store.categories)
 
-  useEffect(() => { dispatch(getCategoriesAll())}, [])
+  useEffect(() => {dispatch(fetchGetCategoriesAll())
+                    window.scrollTo(0, 0);
+                  }, [])
 
 
   return (

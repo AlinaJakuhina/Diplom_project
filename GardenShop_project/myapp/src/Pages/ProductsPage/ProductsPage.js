@@ -1,36 +1,44 @@
-import React, { useEffect, useState } from 'react'
-import {  useDispatch, useSelector } from 'react-redux';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { getCategoriesById } from '../../asyncActions/categoriesAll';
-import { getProductsAll } from '../../asyncActions/productsAll';
+import { fetchGetCategoriesById } from '../../asyncActions/categoriesAll';
+import { fetchGetProductsAll } from '../../asyncActions/productsAll';
 import ProductsList from '../../components/ProductsList/ProductsList';
-import SearchChekBox from '../../components/SearchCheckBox/SearchCheckBox';
-import SearchForm from '../../components/SearchForm/SearchForm';
-import SearchSort from '../../components/SearchSort/SearchSort';
 import Filter from '../../components/UI/Filter/Filter';
-import { categoriesReducer } from '../../store/reducers/categoriesReducer';
+import { getProductListBySaleAction } from '../../store/reducers/productsReducer';
 import s from './ProductsPage.module.css';
 
-function ProductPage({type}) {
+function ProductPage({ type }) {
+
+  const { id } = useParams();
 
   const dispatch = useDispatch();
-  const products = useSelector(store => store.products)
+  const titlePage = useSelector(store => store.products.titlePage)
+  const productList = useSelector(store => store.products.productList).filter((product) =>
+    product.showBySale && product.rangeActive);
 
+
+
+  useEffect(() => {
+    // console.log(type)
+    if (type === 'categories') {
+      dispatch(fetchGetCategoriesById(id))
+    } else {
+      dispatch(fetchGetProductsAll(type))
+      if (type === 'sale') {
+        dispatch(getProductListBySaleAction())
+      }
+    }
+  }, [id, type]);
 
   return (
 
     <div className={s.products_container}>
-      
-      <h2>All Products</h2>
-
-      <div className={s.filter_container}>
-        <Filter type={type}/>
-      </div>
-
-      <div className={s.products_container} id='products'>
-        <ProductsList products={products}/>
-      </div>
+      <h2>{titlePage.title}</h2>
+      <Filter type={type} />
+      <ProductsList products={productList} />
     </div>
+
   )
 }
 

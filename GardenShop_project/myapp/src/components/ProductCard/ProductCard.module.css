@@ -42,7 +42,6 @@
     z-index: 5;
     width: 300px;
     height: 72px;
-   
 }
 
 :hover .add_product_btn{
@@ -57,7 +56,6 @@
   z-index: 0;
   min-height: 400px;
   width: 100%;
-  margin-left: -120px;
 }
 
 .card_info {

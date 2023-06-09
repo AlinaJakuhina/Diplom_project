@@ -8,32 +8,33 @@ import Order from '../../components/Order/Order';
 
 function ShoppingCartPage() {
 
-// const dispatch = useDispatch();
+  // const dispatch = useDispatch();
 
   const cart = useSelector(store => store.cart);
-  useEffect(() => { window.scrollTo(0, 0);
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [])
 
   return (
-      <div className={s.cartPage_container}>
-        <div className={s.cart}>
-          <div className={s.cart_title}>
-            <h2>Shopping cart</h2>
-            <div className={s.link_back}>
-              <NavLink to='/products'>
-                <p>Back to the store <MdChevronRight className={s.go_back} size={30}/></p>
-              </NavLink>
-             </div>
-          </div>
-
-          <div className={s.list_wrapper}>
-            {cart.length !== 0 ? <CartList />  :
-              (<p className={s.error}>No products in the cart</p>)
-            }
-            <Order/>
+    <div className={s.cartPage_container}>
+      <div className={s.cart}>
+        <div className={s.cart_title}>
+          <h2>Shopping cart</h2>
+          <div className={s.link_back}>
+            <NavLink to='/products/all'>
+              <p>Back to the store <MdChevronRight className={s.go_back} size={30} /></p>
+            </NavLink>
           </div>
         </div>
+
+        <div className={s.list_wrapper}>
+          {cart.length !== 0 ? <CartList /> :
+            (<p className={s.error}>No products in the cart</p>)
+          }
+          <Order className={s.order}/>
+        </div>
       </div>
+    </div>
   )
 }
 

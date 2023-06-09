@@ -7,8 +7,7 @@ import CategoriesPage from './Pages/CategoriesPage/CategoriesPage';
 import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import ShoppingCartPage from './Pages/ShoppingCartPage/ShoppingCartPage';
 import ProductsPage from './Pages/ProductsPage/ProductsPage';
-import SaleProductPage from './Pages/SaleProductPage/SaleProductPage';
-import ProductCard from './Pages/ProductDescrPage/ProductDescrPage';
+import ProductDescrPage from './Pages/ProductDescrPage/ProductDescrPage';
 
 
 
@@ -21,10 +20,10 @@ function App() {
     <Routes>
       <Route path='/' element={<HomePage />} />
       <Route path='/categories' element={<CategoriesPage />} />
-      <Route path='/products' element={<ProductsPage/> } />
-      <Route path='/categories/:id' element={<ProductsPage/>} />
-      <Route path='/products/:id' element={<ProductCard/>}/>
-      <Route path='/sales' element={<SaleProductPage/>}/>
+      <Route path='/categories/:id' element={<ProductsPage type={'categories'}/>} />
+      <Route path='/products/all' element={<ProductsPage type={'all'}/> } />
+      <Route path='/products/:id' element={<ProductDescrPage/>}/>
+      <Route path='/sales/all' element={<ProductsPage type={'sale'} />}/>
       <Route path ='/cart' element={<ShoppingCartPage/>} />
       <Route path='/*' element={<NotFoundPage />}/>
     </Routes>

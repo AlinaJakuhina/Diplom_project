@@ -1,27 +1,22 @@
-import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getProductsAll } from '../../asyncActions/productsAll';
-import ProductsList from '../ProductsList/ProductsList';
-import s from './SaleList.module.css';
-
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux'
+import { fetchGetProductsAll } from '../../asyncActions/productsAll';
+import ProductsList from '../ProductsList/ProductsList'
+import s from './SaleList.module.css'
 
 function SaleList() {
 
-  const dispatch = useDispatch()
-  const products = useSelector(store => store.products)
+  const dispatch = useDispatch();
+  useEffect(() => dispatch(fetchGetProductsAll('sale')), [dispatch])
 
-  useEffect(() => {dispatch(getProductsAll())}, [])
+  const products = useSelector(store => store.products.productList)
+  const products_cards = products.sort(() => Math.random() - 0.5).slice(0, 3);
+  console.log(products_cards);
 
- 
 
-  const products_cards = products.filter((elem) => elem.discont_price)
-                                 .sort(()=> Math.random() - 0.5)
-                                 .slice(0,3);
-
-                                                     
   return (
-    <div className={s.sale_wrapper}>
-     <ProductsList products={products_cards} title="Sale" />
+    <div className={s.sale_wrapper} id='sale'>
+      <ProductsList products={products_cards} title="Sale" />
     </div>
   )
 }

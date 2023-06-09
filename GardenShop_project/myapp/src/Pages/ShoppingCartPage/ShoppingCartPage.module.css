@@ -42,3 +42,7 @@
     align-items: flex-start;
     margin-bottom: 140px;
 }
+
+.order{
+align-self: flex-start;
+}

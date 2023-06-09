@@ -11,7 +11,7 @@ function BannerSale() {
         <div className={s.banner_left}>
             <h1>Sale</h1>
             <h2>New Season</h2>
-            <Link to='sale' smooth={true} duration={700} >
+            <Link to='sale' smooth="true" duration={700} >
             <button>Sale</button>
             </Link>
         </div>
