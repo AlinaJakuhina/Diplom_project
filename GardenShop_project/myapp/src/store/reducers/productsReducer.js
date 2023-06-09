@@ -48,17 +48,14 @@ export const productsReducer = (state = defaultState, action) => {
       };
 
     case FILTER_PRODUCTS_BY_SALE:
-      if (action.payload) {
-        return state.map(elem => {
-          if ((elem.discont_price === null)) {
-            elem.showBySale = false
-          }
-          return elem
+      return {
+        ...state,
+        productList: state.productList.map(elem => {
+          if (elem.discont_price === null){
+            elem.showBySale = !action.payload}
+          return elem;
         })
-      } else {
-        return state.map(elem => ({ ...elem, showBySale: true }))
-      }
-
+      };
 
     case SORT_BY_RANGE:
       const { from, to } = action.payload;
@@ -80,28 +77,40 @@ export const productsReducer = (state = defaultState, action) => {
       };
 
     case SORT_BY_PRICE_DESC:
-      return [...state].sort((a, b) => a.price - b.price);
+      const sortedListDesc = [...state.productList]?.sort((a, b) => (b.discont_price ?? b.price) - (a.discont_price ?? a.price));
+  return {
+    ...state,
+    productList: sortedListDesc
+  };
 
     case SORT_BY_PRICE_ASCEND:
-      return [...state].sort((a, b) => b.price - a.price);
+      const sortedListAsc = [...state.productList]?.sort((a, b) => (a.discont_price ?? a.price) - (b.discont_price ?? b.price));
+  return {
+    ...state,
+    productList: sortedListAsc
+  };
 
     case SORT_BY_NAME_ASC:
-      return [...state].sort((a, b) => {
-        const titleA = a.title || "";
-        const titleB = b.title || "";
-        return titleA.localeCompare(titleB);
-      });
+      return {
+        ...state,
+        productList: [...state.productList].sort((a, b) =>
+        a.title.localeCompare(b.title)
+      )}
 
     case SORT_BY_NAME_DESC:
-      return [...state].sort((a, b) => {
-        const titleA = a.title || "";
-        const titleB = b.title || "";
-        return titleB.localeCompare(titleA);
-      });
+      return {
+        ...state,
+        productList: [...state.productList].sort((a, b) =>
+          b.title.localeCompare(a.title)
+        ),
+      };
 
     case SORT_BY_DEFAULT:
-      return [...state].sort((a, b) => a.id - b.id);
-
+      return {
+        ...state,
+          productList: [...state.productList].sort((a, b) => a.id - b.id),
+        };
+      
 
     default:
       return state
