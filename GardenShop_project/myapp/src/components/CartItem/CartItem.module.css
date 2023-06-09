@@ -5,8 +5,6 @@
     font-size: 20px;
     border-bottom: 1px solid rgba(167, 167, 167, 1);
     position: relative;
-    
-
 }
 
 .product_info{
@@ -23,13 +21,14 @@
     font-style: semiBold;
     letter-spacing: 2px;
     color:#3A3A3A;
+    line-height: normal;
 }
 
-img{
+.cart_container img{
     width: 192px;
     height: 166px;
     border-radius: 8px;
-    object-fit:contain;
+    object-fit:cover;
 }
 
 .quant_buttons{

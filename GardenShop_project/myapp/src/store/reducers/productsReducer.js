@@ -42,7 +42,7 @@ export const productsReducer = (state = defaultState, action) => {
 
     case GET_PRODUCT_LIST_BY_SALE:
       return {
-        titlePage: { title: 'Products with Sale' },
+        titlePage: { title: 'Products with sale' },
         productList: state.productList.filter(elem => elem.discont_price)
           .map(elem => ({ ...elem, showBySale: true, rangeActive: true })),
       };

@@ -24,3 +24,9 @@
     position: relative;
     right: 25%
 }
+
+.title{
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}

@@ -6,6 +6,7 @@
     font-size: 40px;
     letter-spacing: 2px;
     font-weight: 700;
+    
 }
 .go_back{
     position: absolute;
@@ -41,8 +42,13 @@
     justify-content:space-between;
     align-items: flex-start;
     margin-bottom: 140px;
+    
 }
 
 .order{
 align-self: flex-start;
+}
+
+.cartList{
+    line-height: normal;
 }

@@ -18,7 +18,7 @@ function ProductPage({ type }) {
     product.showBySale && product.rangeActive);
 
 
-
+// eslint-disable-next-line react-hooks/exhaustive-deps 
   useEffect(() => {
     // console.log(type)
     if (type === 'categories') {
@@ -34,7 +34,7 @@ function ProductPage({ type }) {
   return (
 
     <div className={s.products_container}>
-      <h2>{titlePage.title}</h2>
+      <h2 className={s.title}>{titlePage.title}</h2>
       <Filter type={type} />
       <ProductsList products={productList} />
     </div>

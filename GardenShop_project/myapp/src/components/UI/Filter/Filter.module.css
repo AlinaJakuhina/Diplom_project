@@ -51,3 +51,59 @@
 .filter_by_sort{
     margin-left: 90px;
 }
+
+/* ---- */
+.filter_checkbox_title{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* Создаем контейнер для кастомного checkbox */
+  .custom_checkbox {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: rgb(253, 252, 252);
+    border: 1px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    margin-left: 30px;
+  }
+  
+  /* Стилизуем отмеченное состояние */
+.custom_checkbox::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 38px;
+    height: 38px;
+    background-color: rgba(51, 153, 51, 1);
+    border-radius: 6px;
+    opacity: 0;
+  }
+  
+  /* Показываем отмеченное состояние при активации checkbox */
+  input[type="checkbox"]:checked + .custom_checkbox::before {
+    opacity: 1;
+    content: "\2713"; /* Юникод символ для галочки */
+    color: #fff;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  /* Стилизуем фокусировку */
+  .custom_checkbox:focus {
+    outline: none;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  }

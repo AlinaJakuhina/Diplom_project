@@ -68,3 +68,7 @@
     display: flex;
     justify-content: space-between;
 }
+
+.footer_right_adress{
+    text-decoration-line: underline;
+}

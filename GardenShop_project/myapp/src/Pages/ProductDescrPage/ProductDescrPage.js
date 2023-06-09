@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
-import { fetchGetProductsInfo, url_prod_item, url_prod_list } from '../../asyncActions/productsAll';
 import { addToCartAction } from '../../store/reducers/cartReducers';
 import s from './ProductDescrPage.module.css';
 

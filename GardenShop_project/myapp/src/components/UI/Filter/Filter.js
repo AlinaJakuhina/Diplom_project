@@ -69,6 +69,7 @@ function Filter({ type }){
             <label className={s.filter_checkbox_title}>Discounted items
                <input type="checkbox" id="checkbox" name="checkbox" onClick={handlerSale} 
               />
+              <span className={s.custom_checkbox}></span>
             </label>
         </div>
         } 

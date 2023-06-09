@@ -28,7 +28,7 @@ function ShoppingCartPage() {
         </div>
 
         <div className={s.list_wrapper}>
-          {cart.length !== 0 ? <CartList /> :
+          {cart.length !== 0 ? <CartList className={s.cartList}/> :
             (<p className={s.error}>No products in the cart</p>)
           }
           <Order className={s.order}/>
