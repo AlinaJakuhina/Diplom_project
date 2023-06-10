@@ -2,8 +2,13 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import s from './NavMenu.module.css'
 import { BsHandbag } from "react-icons/bs";
+import { useSelector } from 'react-redux';
 
 function NavMenu() {
+
+  const cart = useSelector(store => store.cart)
+  const cartCount = cart.reduce((acc, item) => acc + item.count,0)
+
   return (
     <nav className={s.nav_conteiner}>
       <ul className={s.links}>
@@ -20,6 +25,7 @@ function NavMenu() {
 
         <NavLink to='/cart'>
           <BsHandbag className={s.bag} />
+          {cartCount > 0 && <span className={s.counter}>{cartCount}</span>}
         </NavLink>
       </ul>
 

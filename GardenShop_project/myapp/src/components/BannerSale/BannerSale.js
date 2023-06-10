@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { HashLink } from 'react-router-hash-link'
 import s from './BannerSale.module.css'
 import banner from './media/banner.png'
 
@@ -11,9 +11,9 @@ function BannerSale() {
         <div className={s.banner_left}>
             <h1>Sale</h1>
             <h2>New Season</h2>
-            <Link to='sale' smooth="true" duration={700} >
+            <HashLink to='#sale' smooth="true" duration={500} >
             <button>Sale</button>
-            </Link>
+            </HashLink>
         </div>
 
         <div className={s.banner_right}>

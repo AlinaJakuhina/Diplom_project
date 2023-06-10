@@ -10,7 +10,7 @@ let {
   register, 
   handleSubmit,
   formState: {errors},
-  reset,
+  reset,     // сбрасывание данных
 } = useForm({mode:'onSubmit'});
 
 const onSubmit = (data) => {

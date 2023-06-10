@@ -26,7 +26,7 @@ function HomePage() {
       <BannerSale/>
       <CategoriesList categories={categories_cards} title='Catalog' btn_category={true}/>
       <DiscountBox/>
-      <SaleList />
+      <SaleList/>
     </div>
   )
 }

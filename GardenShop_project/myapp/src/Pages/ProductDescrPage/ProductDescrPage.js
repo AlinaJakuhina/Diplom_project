@@ -31,7 +31,7 @@ function ProductDescrPage() {
 
 	const addToCart = (e) => {
 		e.preventDefault();
-		dispatch(addToCartAction(product));
+		dispatch(addToCartAction(product[0]));
 	};
 
 	const productItem = product ? Object.assign({}, ...product) : {}
