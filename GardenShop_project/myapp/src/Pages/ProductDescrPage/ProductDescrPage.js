@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { useParams } from 'react-router-dom';
+import React, { useEffect } from 'react'
+import { useDispatch, useSelector } from 'react-redux';
+import { useNavigate, useParams } from 'react-router-dom';
+import { fetchGetProductsInfo } from '../../asyncActions/productsAll';
 import { addToCartAction } from '../../store/reducers/cartReducers';
 import s from './ProductDescrPage.module.css';
 
@@ -8,34 +9,31 @@ import s from './ProductDescrPage.module.css';
 function ProductDescrPage() {
 
 	const url = 'http://localhost:3333';
-	const [product, setProduct] = useState([])
 	const { id } = useParams();
 	const dispatch = useDispatch();
+	const navigatePage = useNavigate();
 
-	// const productInfo = useSelector((store) => store.productInfo);
-
+	const productInfo = useSelector(store => store.productInfo)
 
 	useEffect(() => {
-		window.scrollTo(0, 0);
-		fetch(`${url}/products/${id}`)
-			.then(res => res.json())
-			.then(data => setProduct(data))
-	}, [id]);
+		dispatch(fetchGetProductsInfo(id))
+		window.scrollTo(0,0)
+	}, [dispatch,id])
 
-	// useEffect(() => {
-	// 	id && dispatch(fetchGetProductsInfo(`/products/${id}`));
-	// }, [dispatch, id]);
+	if (productInfo.status) {
+		navigatePage('/*')
+	}
 
-
-	console.log(product);
+	
+	// console.log(product);
 
 	const addToCart = (e) => {
 		e.preventDefault();
-		dispatch(addToCartAction(product[0]));
+		dispatch(addToCartAction(productInfo));
 	};
 
-	const productItem = product ? Object.assign({}, ...product) : {}
-	const { title, image, price, discont_price, description } = productItem;
+	// const productItem = product ? Object.assign({}, ...product) : {}
+	const { title, image, price, discont_price, description } = productInfo;
 	return (
 
 		<div className={s.product_info_container}>
