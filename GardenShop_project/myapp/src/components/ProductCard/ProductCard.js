@@ -26,7 +26,7 @@ function ProductCard(productCard) {
 					<button className={s.add_product_btn} onClick={addToCart}>Add to cart</button>
 				</div>
 				<div className={s.card_info} >
-              <p className={s.discount_price}>{discont_price !== null ? discont_price : price}<span>$</span></p>
+              <p className={s.discount_price}>{discont_price !== null ? discont_price : price }<span className={s.dollar}>$</span></p>
              {discount && <p className={s.price}>{price}$</p>}
              {discount && <p className={s.discount}>-{discount}%</p>}
             </div>

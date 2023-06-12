@@ -17,7 +17,7 @@ function CategoriesPage() {
 
   return (
     <div className={s.categories_container}>
-      <h2>Categories</h2>
+      <h2 className={s.title}>Categories</h2>
       <CategoriesList categories={categories}/>
     </div>
   )

@@ -69,3 +69,97 @@
 .errors{
     font-size: 28px;
 }
+
+@media( max-width: 1220px ) {
+    .discount_wrapper{
+        height: 376px;
+    }
+    .box_left img{
+        width: 250px;
+        height: 250px;
+    }
+    .box_right h1{
+        font-size: 28px;
+    }
+    .box_right h2{
+        font-size: 28px;
+    }
+    .form input{
+        width: 343px;
+        height: 60px;
+        margin: 1px 0px;
+        padding-left: 25px;
+    }
+    .form button{
+        width: 343px;
+        height: 60px;
+        padding-left: 25px;
+    }
+}
+
+@media( max-width: 1000px) {
+        .discount_wrapper{
+            height: 346px;
+        }
+        .box_left img{
+            width: 250px;
+            height: 250px;
+
+        }
+        .box_right h1{
+            font-size: 28px;
+        }
+        .box_right h2{
+            font-size: 28px;
+        }
+        .form input{
+            width: 250px;
+            height: 50px;
+            margin: 1px 0px;
+            padding-left: 25px;
+        }
+        .form button{
+            width: 250px;
+            height: 50px;
+            padding-left: 25px;
+            font-size: 22px;
+        }
+        .box_right{
+            padding: 250px;
+        }
+    }
+
+
+@media( max-width: 720px ) {
+    .discount_wrapper{
+        height: 300px;
+        width: 710px;
+    }
+    .box_left img{
+        width: 150px;
+        height: 150px;
+    }
+    .box_right h1{
+        font-size: 22px;
+    }
+    .box_right h2{
+        font-size: 22px;
+    }
+
+    .form input{
+        width: 180px;
+        height: 30px;
+        font-size: 18px;
+    }
+    .form .phone_button {
+        width: 180px;
+        height: 30px;
+        font-size: 18px;
+    }
+}
+
+    @media( max-width: 600px ) {
+        .discount_wrapper{
+            display: none;
+        }
+    }

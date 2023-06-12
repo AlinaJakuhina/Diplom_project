@@ -1,5 +1,5 @@
 import React from 'react'
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 import s from './CartItem.module.css';
 import { FiX } from "react-icons/fi";
@@ -13,6 +13,7 @@ function CartItem(props) {
 
     const dispatch = useDispatch();
     const url = 'http://localhost:3333';
+
 
   return (
     <div className={s.cart_container}>
@@ -36,7 +37,7 @@ function CartItem(props) {
         </div>
         <p className={s.discount_price}>{discont_price ? discont_price : price}<span>$</span></p>
         <p className={s.price}>{price}<span>$</span></p>
-        
+
     </div>
   )
 }

@@ -38,3 +38,26 @@
     padding: 30px 35px 90px;
     
 }
+
+@media ( max-width: 1180px ) {
+    .categories_container{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media ( max-width: 1060px ) {
+    .categories_container{
+        grid-template-columns: repeat(2, 1fr);
+       
+    }
+}
+
+@media ( max-width: 710px ) {
+    .categories_container{
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    .categories{
+       text-align: center;
+    }
+}

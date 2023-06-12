@@ -1,0 +1,44 @@
+.line{
+    margin-bottom: 7px;
+    height: 3px;
+    width: 30px;
+    background-color: #21243D ;
+    display: block;
+
+    transition: all .3s;
+}
+
+.burger{
+    position: absolute;
+    top: 32px;
+    right: 20px;
+
+    display: none;
+}
+
+.burger_active{
+    position: absolute;
+    top: 32px;
+    right: 20px;
+
+}
+
+.burger_active .line:first-child{
+    rotate: 45deg;
+    translate: 0 10px;
+}
+
+.burger_active .line:nth-child(2){
+    rotate: 45deg;
+    translate: 0 0px;
+}
+
+.burger_active .line:last-child{
+    rotate: -45deg;
+    translate: 0 -10px;
+}
+@media (max-width: 600px) {
+    .burger{
+        display: block;
+    }
+}

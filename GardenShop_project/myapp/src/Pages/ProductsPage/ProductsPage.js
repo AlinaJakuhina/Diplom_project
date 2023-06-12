@@ -35,7 +35,7 @@ function ProductPage({ type }) {
 
     <div className={s.products_container}>
       <h2 className={s.title}>{titlePage.title}</h2>
-      <Filter type={type} />
+      <Filter type={type} className={s.c}/>
       <ProductsList products={productList} />
     </div>
 

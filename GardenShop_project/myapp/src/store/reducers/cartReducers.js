@@ -1,10 +1,15 @@
-const defaultState = [];
+const updateStorage = JSON.parse(localStorage.getItem('cart'));
+
+const defaultState = updateStorage ? updateStorage : [];
 
 const ADD_TO_CART = '[CART] ADD_TO_CART';
 const INCREMENT_PRODUCT = 'INCREMENT_PRODUCT';
 const DECREMENT_PRODUCT = 'DECREMENT_PRODUCT';
 const DELATE_PRODUCT = 'DELATE_PRODUCT';
 const CLEAR_CART = '[CART] CLEAR_CART';
+
+const updateLocalStorage = newState =>
+  localStorage.setItem('cart', JSON.stringify(newState));
 
 
 const checkProduct = (state, payload) => {
@@ -22,10 +27,14 @@ export const cartRreducer = (state = defaultState, action) => {
         case ADD_TO_CART:
             console.log(action.payload)
             const newState = checkProduct(state, action.payload)
+            updateLocalStorage(newState)
             return newState
+
         case INCREMENT_PRODUCT:
             state.find(el => el.id === action.payload).count++
+            updateLocalStorage([...state])
             return [...state]
+
         case DECREMENT_PRODUCT:
             const target = state.find(el => el.id === action.payload);
             if (target.count === 1) {
@@ -33,11 +42,18 @@ export const cartRreducer = (state = defaultState, action) => {
             } else {
                 target.count--
             }
+            updateLocalStorage([...state])
             return [...state]
+
         case DELATE_PRODUCT:
-            return state.filter(el => el.id !== action.payload)
+            const target2 = state.filter(el => el.id !== action.payload)
+            updateLocalStorage(target2)
+            return target2
+
         case CLEAR_CART:
-            return []
+            updateLocalStorage([]);
+            return [];
+
         default:
             return state
     }

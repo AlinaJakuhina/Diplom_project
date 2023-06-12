@@ -59,7 +59,7 @@ function ProductDescrPage() {
 						)}
             </div>
 
-						<button text="To cart" content="info" onClick={addToCart}>To cart</button>
+						<button className={s.add_button} text="To cart" content="info" onClick={addToCart}>To cart</button>
 
 						<div className={s.description_wrapper}>
               <p className={s.description_title}>Description</p>

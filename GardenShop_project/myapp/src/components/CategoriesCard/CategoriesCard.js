@@ -10,7 +10,7 @@ function CategoriesCard({id , title , image}) {
     <div className={s.card}>
         <Link to={`/categories/${id}`} className={s.card_image}>
           <img src={`${url}${image}`} alt={title}/>
-          <h6>{title}</h6>
+          <h6 className={s.title}>{title}</h6>
         </Link>
     </div>
   )

@@ -6,9 +6,8 @@ import { useSelector } from 'react-redux';
 import CartList from '../../components/CartList/CartList';
 import Order from '../../components/Order/Order';
 
-function ShoppingCartPage() {
 
-  // const dispatch = useDispatch();
+function ShoppingCartPage() {
 
   const cart = useSelector(store => store.cart);
   useEffect(() => {
@@ -26,6 +25,7 @@ function ShoppingCartPage() {
             </NavLink>
           </div>
         </div>
+        
 
         <div className={s.list_wrapper}>
           {cart.length !== 0 ? <CartList className={s.cartList}/> :
@@ -33,6 +33,7 @@ function ShoppingCartPage() {
           }
           <Order className={s.order}/>
         </div>
+        
       </div>
     </div>
   )

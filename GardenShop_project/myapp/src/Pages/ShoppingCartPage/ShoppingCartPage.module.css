@@ -1,35 +1,34 @@
 .cartPage_container{
     padding: 35px;
+    position: relative;
 }
 
 .cart_title h2{
     font-size: 40px;
-    letter-spacing: 2px;
     font-weight: 700;
-    
-}
-.go_back{
-    position: absolute;
-    color: #cfc5c5;
+    letter-spacing: 2px;
 }
 
+.go_back{
+    color: #cfc5c5;
+}
 .go_back:hover{
     color: black;
 }
 
 .error{
-    color: rgb(251, 3, 3);
     font-size: 28px;
     font-weight: 500;
     letter-spacing: 1px;
+    color: rgba(51, 153, 51, 1);
 }
 
 .link_back{
     position: relative;
     display: flex;
     justify-content: flex-end;
-    border-bottom: 1px solid rgb(167, 167, 167, 1);
-    margin-right: 560px;
+    /* border-bottom: 1px solid rgb(167, 167, 167, 1); */
+    margin-right: 570px;
     font-size: 20px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -38,7 +37,7 @@
 
 .list_wrapper{
     display: flex;
-    gap: 60px;
+    gap:60px;
     justify-content:space-between;
     align-items: flex-start;
     margin-bottom: 140px;
@@ -51,4 +50,23 @@ align-self: flex-start;
 
 .cartList{
     line-height: normal;
+}
+
+
+@media(max-width: 1280px){
+    .list_wrapper{
+    display: flex;
+    gap: 60px;
+    margin-bottom: 140px;
+    align-content: center;
+    align-items: center;
+    flex-direction: column; 
+    }
+}
+
+@media(max-width: 780px){
+    .link_back{
+        padding: 45px;
+        align-items: center;
+    }
 }

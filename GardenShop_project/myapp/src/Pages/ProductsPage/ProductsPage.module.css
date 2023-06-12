@@ -30,3 +30,13 @@
     font-weight: 700;
     letter-spacing: 1.5px;
 }
+
+@media(max-width:1000px){
+    .products_container{
+        position: relative;
+    }
+    .c{
+        position:absolute;
+        left: -100px;
+    }
+}

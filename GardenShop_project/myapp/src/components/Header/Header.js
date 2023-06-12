@@ -8,7 +8,10 @@ import logo from './madia/logo.png'
 
 
 function Header() {
+
+ 
   return (
+
     <header>
         <nav className={s.navigation}>
             <div className={s.nav_left}>

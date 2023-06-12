@@ -7,7 +7,7 @@ function BannerSale() {
 
 
   return (
-    <section>
+    <section className={s.banner_section}>
         <div className={s.banner_left}>
             <h1>Sale</h1>
             <h2>New Season</h2>

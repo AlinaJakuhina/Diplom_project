@@ -7,7 +7,7 @@ function Order() {
 
     const dispatch = useDispatch();
     const cart = useSelector(store => store.cart)
-    const total = cart.reduce((accum, elem) => accum + elem.count * (elem.discont_price ? elem.discont_price : elem.price), 0)
+    const total = cart.reduce((accum, elem) => accum + elem.count * (elem.discont_price ? elem.discont_price : elem.price), 0).toFixed(2);
 
     const submit = (e) => {
         e.preventDefault()

@@ -23,3 +23,20 @@
  width: 72px;
  height: 72px;
 }
+
+@media (max-width: 780px) {
+
+    .navigation{
+        padding: 0 25px;
+    }
+    .nav_left button{
+        width: 90px;
+        height: 30px;
+        font-size: 12px;
+    }
+
+    .logo{
+        width: 38px;
+        height: 38px;
+    }
+}

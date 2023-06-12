@@ -107,3 +107,85 @@ input[type="checkbox"] {
     outline: none;
     box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   }
+
+/* 
+@media(max-width: 1000px){
+  .sort_wrapper{
+    width: 100px;
+    height: 30px;
+  }
+  .sort_title,
+  .filter_by_price{
+    font-size: 18px;
+  }
+  .filter_checkbox_title{
+    font-size: 17px;
+  }
+
+  .filter_by_price input{
+    width: 100px;
+    height: 30px;
+  }
+  .custom_checkbox{
+    width: 40px;
+    height: 30px;
+  }
+
+  .filter_container{
+    width: 100px;
+    margin-right: 30px;
+  }
+} */
+
+@media (max-width: 1000px){
+  .filter_container{
+    display: flex;
+    flex-direction: column;
+
+    align-items:baseline;
+    gap:15px;
+   
+  }
+
+  .filter_title {
+    font-size: 16px;
+  }
+
+  .filter_by_checkbox {
+    margin-bottom: 10px;
+  }
+
+  .filter_checkbox_title {
+    font-size: 14px;
+  }
+
+  .custom_checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    display: inline-block;
+    position: relative;
+    top: 2px;
+    margin-right: 5px;
+  }
+
+  .filter_by_sort {
+    margin-bottom: 10px;
+  }
+
+  .sort_title {
+    font-size: 16px;
+  }
+
+  .sort_wrapper {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  .filter_container{
+    position: relative;
+}
+  label{
+    position:absolute;
+    left: 1px;
+  }
+}

@@ -55,3 +55,73 @@ a:hover button {
     color: black;
   }
 
+
+ @media (max-width:1035px) {
+  .banner_section{
+    position: relative;
+  }
+    .banner_left {
+    position: absolute;
+    top: 0;
+    left: -10;
+    padding: 120px 35px;
+    
+    }
+    .banner_right img{
+    margin-left: 365px;
+    object-fit: contain;
+    width: 910px;
+    height: 600px;
+    }
+
+  }
+  @media (max-width:900px){
+    .banner_right img{
+      margin-left: 305px;
+      object-fit: contain;
+      width: 810px;
+      height: 500px;
+      }
+  }
+
+  @media (max-width:800px){
+    .banner_right img{
+      margin-left: 205px;
+      object-fit: contain;
+      width: 810px;
+      height: 500px;
+      }
+  }
+  
+
+  @media (max-width:720px) {
+    .banner_section{
+      position: relative;
+    }
+      .banner_left {
+      position: absolute;
+      top: 0;
+      left: -10;
+      padding: 120px 35px;
+      font-size: 24px;
+      
+      }
+      .banner_right img{
+      margin-left: 125px;
+      object-fit: contain;
+      width: 810px;
+      height: 500px;
+      }
+
+      h1,
+      h2{
+        font-size: 28px;
+      }
+
+      .banner_left button{
+      width: 95px;
+      height: 52px;
+      font-size: 18px;
+      }
+  
+    }

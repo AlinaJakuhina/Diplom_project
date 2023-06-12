@@ -103,3 +103,69 @@ justify-content: center;
   font-weight: 500;
   letter-spacing: 1px;
 }
+
+@media(max-width: 1150px){
+  .price_description {
+    width: 90%;
+    justify-content: space-between;
+  }
+    span:nth-child(1) {
+      font-size: 30px;
+    }
+
+    .title{
+      padding: 0px;
+    }
+
+  .info_content .add_button {
+    font-size: 20px;
+    width: 170px;
+    height: 58px;
+    margin: 10px 0 40px;
+  }
+
+  .info_image img {
+    width: 500px;
+    height: 450px;
+  }
+  .description_wrapper{
+    padding-top: 20px;
+    letter-spacing: 1px;
+    font-size: 18px;
+    background-size: 12px 2px;
+  }
+}
+
+@media(max-width: 800px){
+  .info_image img {
+    width: 350px;
+    height: 350px;
+  }
+  .info_content p{
+    font-size: 20px;
+  }
+  span:nth-child(1) {
+    font-size: 20px;
+  }
+}
+
+@media(max-width: 650px){
+  .title{
+    font-size: 24px;
+  }
+  .info_image img {
+    width: 300px;
+    height: 300px;
+  }
+  .info_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .info_content .add_button {
+    font-size: 18px;
+    width: 160px;
+    height: 48px;
+    margin: 10px 0 40px;
+  }
+}
