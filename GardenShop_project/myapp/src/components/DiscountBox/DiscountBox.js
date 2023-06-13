@@ -36,15 +36,15 @@ const phoneRegister = register('phone', {
       <div className={s.box_right}>
         <h1>5% OFF</h1>
         <h2>on the first order</h2>
-
+      
         <form onSubmit={handleSubmit(onSubmit)} className={s.form}>
           <input type='text' name='phone' placeholder='+49' className={s.phone_input}
           {...phoneRegister}/>
           <div className={s.errors}>{errors.phone && <p style={{color: 'red'}}>{errors.phone.message} </p>}</div>
-          <button className={s.phone_button}>Get discount</button>
         </form>
-      
+        <button className={s.phone_button}>Get a discount</button>
       </div>
+      
 
     </div>
   )

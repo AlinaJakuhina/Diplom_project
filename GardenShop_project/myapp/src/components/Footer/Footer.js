@@ -10,7 +10,7 @@ function Footer() {
 
         <div className={s.footer_wrapper}>
             <div className={s.footer_left}>
-                <h2>Contact</h2>
+                <h2 className={s.adress_title}>Contact</h2>
                 <h1>+49 999 999 99 99</h1>
                      <div className={s.icons}>
                          <a href="https://instagram.com">
@@ -25,7 +25,7 @@ function Footer() {
              </div>
 
             <div className={s.footer_right}>
-                <h2>Address</h2>
+                <h2 className={s.adress_title}>Address</h2>
                      <div className={s.footer_right_adress}>
                          <p>Linkstraße 2, 8 OG,10785,</p>
                          <p>Berlin, Deutchland</p>

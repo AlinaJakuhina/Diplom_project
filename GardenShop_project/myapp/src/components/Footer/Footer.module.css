@@ -108,14 +108,15 @@
     }
 }
 
-@media( max-width: 650px) {
+@media( max-width: 600px) {
     .map{
-    width: 590px;
+    width: 540px;
     height: 300px; 
     }
 
     .footer_left h1{
         font-size: 24px;
+       
     }
     .footer_right_adress {
         font-size: 24px;
@@ -131,4 +132,8 @@
         width:30px;
         height: 30px;
     }
+    .adress_title{
+        padding-bottom: 10px;
+    }
+   
 }

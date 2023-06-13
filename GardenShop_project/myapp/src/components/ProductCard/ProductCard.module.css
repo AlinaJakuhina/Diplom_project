@@ -126,9 +126,6 @@
         padding-left: 120px;
     }
 
-    /* .add_product_btn{
-      display: none;
-    } */
     .add_product_btn{
     padding: 5px;
     width: 100%;
@@ -142,4 +139,7 @@
     left: 1px;
     }
 
+    .product_card span{
+        font-size: 10px;
+    }
 }

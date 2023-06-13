@@ -168,4 +168,12 @@ justify-content: center;
     height: 48px;
     margin: 10px 0 40px;
   }
+  .price_description p{
+    font-size: 14px;
+  }
+
+  .price_description span{
+    font-size: 10px;
+  }
+
 }

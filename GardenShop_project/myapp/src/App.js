@@ -8,24 +8,15 @@ import NotFoundPage from './Pages/NotFoundPage/NotFoundPage';
 import ShoppingCartPage from './Pages/ShoppingCartPage/ShoppingCartPage';
 import ProductsPage from './Pages/ProductsPage/ProductsPage';
 import ProductDescrPage from './Pages/ProductDescrPage/ProductDescrPage';
-import MobileMenu from './components/MobileMenu/MobileMenu';
-import { useState } from 'react';
-import Burger from './components/Burger/Burger';
+
 
 
 
 function App() {
-
-  const [ active, setActive ] = useState(false)
-
-
   return (
   <div>  
     <div>
-    <MobileMenu active={active} setActive={setActive}/>
-    <Burger active={active} setActive={setActive}/>
-      <Header />
-
+     <Header/>
     </div>
     <Routes>
       <Route path='/' element={<HomePage />} />

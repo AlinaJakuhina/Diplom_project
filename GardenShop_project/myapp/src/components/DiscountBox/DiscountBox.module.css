@@ -28,7 +28,7 @@
     font-size: 40px;
 }
 .box_right{
-    margin-top: 50px;
+    margin-top: 40px;
     padding: 204px;
 }
 
@@ -36,30 +36,28 @@
     display: flex;
     flex-direction: column;
     max-width: 470px;
-    
 }
 
 .phone_input{
     width: 473px;
     height: 75px;
     border-radius: 25px;
-    padding-left: 28px;
+    border: none;
+    padding-left: 50px;
     font-size: 18px;
-    margin-top: 0px;
-
 }
 
 .phone_button{
+    margin-bottom: 40px ;
     width: 473px;
     height: 75px;
     border-radius: 25px;
-    margin: 38px 0 32px;
-    padding-left: 28px;
     font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
     color: white;
     background-color: transparent;
     border: white 2px solid;
-    margin-top: -20px;
 }
 
 .phone_button:hover{
@@ -75,8 +73,8 @@
         height: 376px;
     }
     .box_left img{
-        width: 250px;
-        height: 250px;
+        width: 270px;
+        height: 270px;
     }
     .box_right h1{
         font-size: 28px;
@@ -87,10 +85,9 @@
     .form input{
         width: 343px;
         height: 60px;
-        margin: 1px 0px;
-        padding-left: 25px;
+        padding-left: 50px;
     }
-    .form button{
+    .phone_button{
         width: 343px;
         height: 60px;
         padding-left: 25px;
@@ -98,46 +95,33 @@
 }
 
 @media( max-width: 1000px) {
-        .discount_wrapper{
-            height: 346px;
-        }
         .box_left img{
             width: 250px;
             height: 250px;
-
-        }
-        .box_right h1{
-            font-size: 28px;
-        }
-        .box_right h2{
-            font-size: 28px;
         }
         .form input{
-            width: 250px;
+            width: 270px;
             height: 50px;
-            margin: 1px 0px;
-            padding-left: 25px;
+            padding-left: 50px;
         }
-        .form button{
-            width: 250px;
+        .phone_button{
+            width: 270px;
             height: 50px;
-            padding-left: 25px;
             font-size: 22px;
         }
         .box_right{
-            padding: 250px;
+            padding-right: 350px;
         }
     }
 
 
 @media( max-width: 720px ) {
     .discount_wrapper{
-        height: 300px;
-        width: 710px;
+        width: 100%
     }
     .box_left img{
-        width: 150px;
-        height: 150px;
+        width: 250px;
+        height: 250px;
     }
     .box_right h1{
         font-size: 22px;
@@ -145,21 +129,39 @@
     .box_right h2{
         font-size: 22px;
     }
-
     .form input{
         width: 180px;
         height: 30px;
         font-size: 18px;
     }
-    .form .phone_button {
+    .phone_button {
         width: 180px;
         height: 30px;
         font-size: 18px;
+    }
+    .box_right{
+        margin-right: 350px;
     }
 }
 
     @media( max-width: 600px ) {
         .discount_wrapper{
-            display: none;
+        width: 100%;
         }
+        .box_left img{
+            width: 170px;
+            height: 170px;
+        }
+        .box_right{
+            padding: 100px;
+        }
+        .form input{
+            font-size: 12px;
+            padding-left: 25px;
+        }
+        .phone_button{
+            font-size: 14px;
+            padding-left: 5px;
+        }
+
     }
