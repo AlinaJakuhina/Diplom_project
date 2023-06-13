@@ -2,6 +2,7 @@ import React from 'react'
 import gnom from './media/gnom.png';
 import s from './DiscountBox.module.css';
 import { useForm } from 'react-hook-form';
+import { send_discount_request } from '../../asyncActions/order';
 
 
 function DiscountBox() {
@@ -13,9 +14,10 @@ let {
   reset,     // сбрасывание данных
 } = useForm({mode:'onSubmit'});
 
-const onSubmit = (data) => {
-  console.log(data)
-  reset()
+const onSubmit = (phone) => {
+  console.log(phone)
+  reset();
+  send_discount_request(phone);
 }
 
 const phoneRegister = register('phone', {
@@ -25,6 +27,10 @@ const phoneRegister = register('phone', {
   }
 })
 
+const handleClick = () => {
+  const phone = document.querySelector('input[name="phone"]').value;
+  send_discount_request(phone);
+};
 
 
   return (
@@ -42,7 +48,9 @@ const phoneRegister = register('phone', {
           {...phoneRegister}/>
           <div className={s.errors}>{errors.phone && <p style={{color: 'red'}}>{errors.phone.message} </p>}</div>
         </form>
-        <button className={s.phone_button}>Get a discount</button>
+        <button type='submit' 
+                onClick={handleClick} 
+                className={s.phone_button}>Get a discount</button>
       </div>
       
 
