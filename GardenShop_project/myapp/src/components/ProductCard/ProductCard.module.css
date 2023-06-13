@@ -46,10 +46,10 @@
     z-index: 5;
 }
 
-.add_product_btn:hover{
+.img_wrapper:hover .add_product_btn{
     opacity: 1;
+    cursor: pointer;
     transition: opacity 0.5s;
-    cursor:pointer;
 }
 
 .product_card{
