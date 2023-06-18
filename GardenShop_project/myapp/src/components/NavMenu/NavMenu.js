@@ -4,6 +4,7 @@ import s from './NavMenu.module.css'
 import { BsHandbag } from "react-icons/bs";
 import { useSelector } from 'react-redux';
 
+
 function NavMenu() {
 
   const cart = useSelector(store => store.cart)
@@ -27,6 +28,7 @@ function NavMenu() {
           {cartCount > 0 && <span className={s.counter}>{cartCount}</span>}
         </NavLink>
       </ul>
+
     </nav>
   )
 }

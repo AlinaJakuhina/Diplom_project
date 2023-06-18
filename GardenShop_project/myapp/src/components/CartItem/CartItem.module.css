@@ -82,4 +82,8 @@
     font-family: 'Montserrat';
   }
 
-  
+  @media (max-width: 600px) {
+  .delete_btn {
+    display: none;
+  }
+}

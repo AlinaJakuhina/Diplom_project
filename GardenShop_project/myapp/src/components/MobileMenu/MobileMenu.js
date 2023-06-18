@@ -12,6 +12,7 @@ function MobileMenu({ active, setActive }) {
                     Products</NavLink></li>
             <li onClick={() => setActive(!active)} className={s.mobile_item}><NavLink to='/sales/all'>All
                     Sales</NavLink></li>
+            <li onClick={() => setActive(!active)} className={s.mobile_item}><NavLink to='/cart'>Cart</NavLink></li>
         </ul>
     </div>
   )

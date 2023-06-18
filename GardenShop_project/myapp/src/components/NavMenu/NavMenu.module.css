@@ -21,6 +21,7 @@
 }
 
 .bag{
+  position: relative;
     width: 27px;
     height: 29px;
 }
@@ -35,6 +36,7 @@
 
 .counter{
     position: absolute;
+    z-index: 3;
     right: -5px;
     top: 38px;
     background-color: red;
@@ -88,10 +90,9 @@
     .links {
         display: none;
     }
-    .bag {
-      display: none;
+    .bag,
+    .counter {
+    display: none;
     }
-    .counter{
-      display: none;
-    }
+    
 }
