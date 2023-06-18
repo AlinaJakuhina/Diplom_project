@@ -22,13 +22,11 @@ function NavMenu() {
       </ul>
 
       <ul className={s.navigation_cart}>
-
         <NavLink to='/cart'>
           <BsHandbag className={s.bag} />
           {cartCount > 0 && <span className={s.counter}>{cartCount}</span>}
         </NavLink>
       </ul>
-
     </nav>
   )
 }

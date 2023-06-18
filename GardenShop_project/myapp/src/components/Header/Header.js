@@ -71,8 +71,7 @@ function Header() {
                           active={active}
                           setActive={setActive}/>
                 <NavMenu/>
-            </div>
-            
+            </div>         
       </nav>
     </header>
 

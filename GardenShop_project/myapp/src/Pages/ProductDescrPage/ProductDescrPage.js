@@ -23,10 +23,7 @@ function ProductDescrPage() {
 	if (productInfo.status) {
 		navigatePage('/*')
 	}
-
-	
 	// console.log(product);
-
 	const addToCart = (e) => {
 		e.preventDefault();
 		dispatch(addToCartAction(productInfo));
@@ -46,7 +43,7 @@ function ProductDescrPage() {
 
 					<div className={s.info_content}>
 						<div className={s.price_description}>
-            {discont_price !== null ? (
+                            {discont_price !== null ? (
 							<>
 								<p className={s.discount_price}>{discont_price}<span>$</span> </p>
 								<p className={s.price}>{price}$</p>
@@ -57,12 +54,12 @@ function ProductDescrPage() {
 						) : (
 							<p className={s.discount_price}>{price}$</p>
 						)}
-            </div>
+                        </div>
 
 						<button className={s.add_button} text="To cart" content="info" onClick={addToCart}>To cart</button>
 
 						<div className={s.description_wrapper}>
-              <p className={s.description_title}>Description</p>
+                            <p className={s.description_title}>Description</p>
 							<p className={s.description_info}>{description}</p>
 						</div>
 					</div>

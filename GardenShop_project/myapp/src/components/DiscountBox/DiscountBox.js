@@ -32,7 +32,6 @@ const handleClick = () => {
   send_discount_request(phone);
 };
 
-
   return (
     <div className={s.discount_wrapper}>
       <div className={s.box_left}>
@@ -52,8 +51,7 @@ const handleClick = () => {
                 onClick={handleClick} 
                 className={s.phone_button}>Get a discount</button>
       </div>
-      
-
+    
     </div>
   )
 }

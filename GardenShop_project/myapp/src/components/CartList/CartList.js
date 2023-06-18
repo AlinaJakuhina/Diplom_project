@@ -12,7 +12,6 @@ const  cart = useSelector(store => store.cart)
         {
           cart.map(elem => <CartItem key={elem.id} {...elem} /> )
         }
-
     </div>
   )
 }

@@ -25,6 +25,11 @@
     padding-left: 10px;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
 
 .sort_wrapper{
     padding-left: 10px;

@@ -17,9 +17,8 @@ function CategoriesList(props) {
         </NavLink>}
     </div>
     <div className={s.categories_container}>
-    {categories.map(elem => <CategoriesCard key={elem.id} {...elem}/>)}
-    </div>
-      
+      {categories.map(elem => <CategoriesCard key={elem.id} {...elem}/>)}
+    </div>   
    </div>
   )
 }
