@@ -1,7 +1,7 @@
 import React from 'react'
 import s from './Footer.module.css'
-import { SiInstagram } from "react-icons/si"
-import { SiWhatsapp } from "react-icons/si"
+import whatsapp from './../Footer/media/whatsapp.png'
+import instagramm from './../Footer/media/instagramm.png'
 
 
 function Footer() {
@@ -14,11 +14,11 @@ function Footer() {
                 <h1>+49 999 999 99 99</h1>
                      <div className={s.icons}>
                          <a href="https://instagram.com">
-                         <SiInstagram className={s.instagram_logo}/>
-                         <p>Instagramm</p>
+                         <img src={instagramm} alt="instagramm_logo" className={s.instagram_logo}/>
+                         <p>instagram</p>
                          </a>
                          <a href="https://whatsapp.com">
-                         <SiWhatsapp className={s.whatsapp_logo}/>
+                         <img src={whatsapp} alt="whatsapp_logo" className={s.whatsapp_logo}/>
                          <p>WhatsApp</p>
                          </a>
                      </div>

@@ -2,18 +2,16 @@
     margin-bottom: 80px;
 }
 .products_list_title{
-    padding: 30px;
     font-size: 40px;
     font-weight: 700;
+    letter-spacing: 1px;
 }
 
 .products_list{
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(276px, 1fr));
+  grid-template-columns: repeat(4,1fr);
+  gap: 40px;
   justify-items: center;
-  grid-column-gap: 45px;
-  
-  padding-left: 30px;
 }
 
 @media ( max-width: 720px){
