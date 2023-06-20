@@ -148,7 +148,7 @@ input[type="checkbox"] {
     flex-direction: column;
 
     align-items:baseline;
-    gap:15px;
+    gap:25px;
    
   }
 
@@ -192,5 +192,24 @@ input[type="checkbox"] {
   label{
     position:absolute;
     left: 1px;
+  }
+}
+
+@media (max-width: 600px){
+  .filter_container{
+    display: flex;
+    align-items: center;
+  }
+  .filter_by_price {
+    padding-left: 135px;
+  }
+
+  .filter_by_checkbox{
+  padding-left: 180px;
+  }
+
+  .custom_checkbox{
+    padding: 15px;
+    margin-left: 80px;
   }
 }

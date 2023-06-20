@@ -1,3 +1,10 @@
 .sale_wrapper{
     padding: 35px ;
 }
+
+@media (min-width: 600px) {
+    .sale_wrapper{
+        padding-bottom: 0px;
+        text-align: center;
+    }
+}

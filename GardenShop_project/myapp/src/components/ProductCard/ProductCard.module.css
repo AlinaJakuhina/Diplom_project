@@ -103,7 +103,7 @@
 
 @media (max-width: 710px){
     .product_card{
-        width: 500px;
+        width: 100%;
         background-color: #f2f2f2;
         padding: 60px 40px;
         border-radius: 5px;
@@ -120,7 +120,7 @@
     .discount_price,
     .price,
     .discount{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .discount_price{
@@ -138,6 +138,18 @@
     position: absolute;
     top: 160px;
     left: 1px;
+    }
+    .add_product_btn:hover{
+        position: absolute;
+        opacity: 1;
+        cursor: pointer;
+        transition: opacity 0.5s;
+        color:rgba(51, 153, 51, 1);
+    }
+
+    .img_wrapper:hover .add_product_btn{
+        opacity: 1;
+        cursor: pointer;
     }
 
     .product_card span{
