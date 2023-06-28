@@ -10,17 +10,6 @@
     display: inline-block;
     
 }
-.img_wrapper:hover::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    background-color: rgba(30, 29, 29, 0.5);
-    z-index: 1;
-  }
 
 .card_wrapper{
   display: flex;
@@ -29,7 +18,8 @@
 
 .add_product_btn{
     padding: 12px;
-    width: 100%;
+    margin-left: 10px;
+    width: 280px;
     height: 72px;
     font-size: 18px;
     font-weight: 600;
@@ -38,7 +28,7 @@
 
     opacity: 0;
     position: absolute;
-    top:225px;
+    top:205px;
     left: -1px;
     color: rgba(51, 153, 51, 1);
     border: 2px solid  rgba(51, 153, 51, 1);

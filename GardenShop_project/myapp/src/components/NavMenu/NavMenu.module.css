@@ -20,6 +20,10 @@
     text-decoration: none;
 }
 
+.nav_item:hover{
+  color: rgba(51, 153, 51, 1);
+}
+
 .bag{
   position: relative;
     width: 27px;
